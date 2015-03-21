@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		7BCD25661ABDE95C00F1D563 /* com.mrgray.launchdns.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.mrgray.launchdns.plist; path = ../../../../../Users/localadmin/Library/LaunchAgents/com.mrgray.launchdns.plist; sourceTree = "<group>"; };
+		7BCD25671ABDE95D00F1D563 /* launchdns */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = launchdns; sourceTree = "<group>"; };
+		7BCD25681ABDE95D00F1D563 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7BCD25691ABDE95D00F1D563 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7BCD256A1ABDE95D00F1D563 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		7BCD256B1ABDE95D00F1D563 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		7BCD256C1ABDE95D00F1D563 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7BCD256F1ABDE95D00F1D563 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		7BCD25701ABDE95D00F1D563 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		7BCD25721ABDE95D00F1D563 /* bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats; sourceTree = "<group>"; };
+		7BCD25731ABDE95D00F1D563 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		7BCD25751ABDE95D00F1D563 /* bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats; sourceTree = "<group>"; };
+		7BCD25761ABDE95D00F1D563 /* bats-exec-suite */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bats-exec-suite"; sourceTree = "<group>"; };
+		7BCD25771ABDE95D00F1D563 /* bats-exec-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bats-exec-test"; sourceTree = "<group>"; };
+		7BCD25781ABDE95D00F1D563 /* bats-format-tap-stream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bats-format-tap-stream"; sourceTree = "<group>"; };
+		7BCD25791ABDE95D00F1D563 /* bats-preprocess */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bats-preprocess"; sourceTree = "<group>"; };
+		7BCD257A1ABDE95D00F1D563 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7BCD257C1ABDE95D00F1D563 /* bats.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = bats.1; sourceTree = "<group>"; };
+		7BCD257D1ABDE95D00F1D563 /* bats.1.ronn */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats.1.ronn; sourceTree = "<group>"; };
+		7BCD257E1ABDE95D00F1D563 /* bats.7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats.7; sourceTree = "<group>"; };
+		7BCD257F1ABDE95D00F1D563 /* bats.7.ronn */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats.7.ronn; sourceTree = "<group>"; };
+		7BCD25801ABDE95D00F1D563 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		7BCD25811ABDE95D00F1D563 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7BCD25821ABDE95D00F1D563 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		7BCD25831ABDE95D00F1D563 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7BCD25851ABDE95D00F1D563 /* bats.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = bats.bats; sourceTree = "<group>"; };
+		7BCD25881ABDE95D00F1D563 /* dos_line.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = dos_line.bats; sourceTree = "<group>"; };
+		7BCD25891ABDE95D00F1D563 /* empty.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = empty.bats; sourceTree = "<group>"; };
+		7BCD258A1ABDE95D00F1D563 /* environment.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = environment.bats; sourceTree = "<group>"; };
+		7BCD258B1ABDE95D00F1D563 /* failing.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = failing.bats; sourceTree = "<group>"; };
+		7BCD258C1ABDE95D00F1D563 /* failing_and_passing.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = failing_and_passing.bats; sourceTree = "<group>"; };
+		7BCD258D1ABDE95D00F1D563 /* failing_helper.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = failing_helper.bats; sourceTree = "<group>"; };
+		7BCD258E1ABDE95D00F1D563 /* failing_setup.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = failing_setup.bats; sourceTree = "<group>"; };
+		7BCD258F1ABDE95D00F1D563 /* failing_teardown.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = failing_teardown.bats; sourceTree = "<group>"; };
+		7BCD25901ABDE95D00F1D563 /* intact.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = intact.bats; sourceTree = "<group>"; };
+		7BCD25911ABDE95D00F1D563 /* invalid_tap.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = invalid_tap.bats; sourceTree = "<group>"; };
+		7BCD25921ABDE95D00F1D563 /* load.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = load.bats; sourceTree = "<group>"; };
+		7BCD25931ABDE95D00F1D563 /* output.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = output.bats; sourceTree = "<group>"; };
+		7BCD25941ABDE95D00F1D563 /* passing.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = passing.bats; sourceTree = "<group>"; };
+		7BCD25951ABDE95D00F1D563 /* passing_and_failing.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = passing_and_failing.bats; sourceTree = "<group>"; };
+		7BCD25961ABDE95D00F1D563 /* passing_and_skipping.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = passing_and_skipping.bats; sourceTree = "<group>"; };
+		7BCD25971ABDE95D00F1D563 /* passing_failing_and_skipping.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = passing_failing_and_skipping.bats; sourceTree = "<group>"; };
+		7BCD25981ABDE95D00F1D563 /* setup.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = setup.bats; sourceTree = "<group>"; };
+		7BCD25991ABDE95D00F1D563 /* single_line.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = single_line.bats; sourceTree = "<group>"; };
+		7BCD259A1ABDE95D00F1D563 /* skipped.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = skipped.bats; sourceTree = "<group>"; };
+		7BCD259B1ABDE95D00F1D563 /* teardown.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = teardown.bats; sourceTree = "<group>"; };
+		7BCD259C1ABDE95D00F1D563 /* test_helper.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_helper.bash; sourceTree = "<group>"; };
+		7BCD259D1ABDE95D00F1D563 /* without_trailing_newline.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = without_trailing_newline.bats; sourceTree = "<group>"; };
+		7BCD25A01ABDE95D00F1D563 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		7BCD25A21ABDE95D00F1D563 /* a.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = a.bats; sourceTree = "<group>"; };
+		7BCD25A31ABDE95D00F1D563 /* b.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = b.bats; sourceTree = "<group>"; };
+		7BCD25A51ABDE95D00F1D563 /* test.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.bats; sourceTree = "<group>"; };
+		7BCD25A61ABDE95D00F1D563 /* suite.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = suite.bats; sourceTree = "<group>"; };
+		7BCD25A71ABDE95D00F1D563 /* test_helper.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_helper.bash; sourceTree = "<group>"; };
+		7BCD25A91ABDE95D00F1D563 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7BCD25AA1ABDE95D00F1D563 /* bind-error.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bind-error.bats"; sourceTree = "<group>"; };
+		7BCD25AB1ABDE95D00F1D563 /* custom-port.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "custom-port.bats"; sourceTree = "<group>"; };
+		7BCD25AC1ABDE95D00F1D563 /* custom-records.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "custom-records.bats"; sourceTree = "<group>"; };
+		7BCD25AD1ABDE95D00F1D563 /* default-records.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "default-records.bats"; sourceTree = "<group>"; };
+		7BCD25AE1ABDE95D00F1D563 /* large-request.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "large-request.bats"; sourceTree = "<group>"; };
+		7BCD25B01ABDE95D00F1D563 /* test.ondemand-socket.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test.ondemand-socket.plist"; sourceTree = "<group>"; };
+		7BCD25B11ABDE95D00F1D563 /* test.port.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = test.port.plist; sourceTree = "<group>"; };
+		7BCD25B21ABDE95D00F1D563 /* test.socket.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = test.socket.plist; sourceTree = "<group>"; };
+		7BCD25B31ABDE95D00F1D563 /* launchctl-ondemand-socket.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "launchctl-ondemand-socket.bats"; sourceTree = "<group>"; };
+		7BCD25B41ABDE95D00F1D563 /* launchctl-port.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "launchctl-port.bats"; sourceTree = "<group>"; };
+		7BCD25B51ABDE95D00F1D563 /* launchctl-socket.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "launchctl-socket.bats"; sourceTree = "<group>"; };
+		7BCD25B61ABDE95D00F1D563 /* multiple-requests.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = "multiple-requests.bats"; sourceTree = "<group>"; };
+		7BCD25B71ABDE95D00F1D563 /* nxdomin.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = nxdomin.bats; sourceTree = "<group>"; };
+		7BCD25B81ABDE95D00F1D563 /* subdomains.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = subdomains.bats; sourceTree = "<group>"; };
+		7BCD25B91ABDE95D00F1D563 /* test_helper.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_helper.bash; sourceTree = "<group>"; };
+		7BCD25BA1ABDE95D00F1D563 /* timeout.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeout.bats; sourceTree = "<group>"; };
+		7BCD25BB1ABDE95D00F1D563 /* usage.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = usage.bats; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		7BCD255B1ABDE8B700F1D563 = {
+			isa = PBXGroup;
+			children = (
+				7BCD25661ABDE95C00F1D563 /* com.mrgray.launchdns.plist */,
+				7BCD25671ABDE95D00F1D563 /* launchdns */,
+				7BCD25681ABDE95D00F1D563 /* config.h */,
+				7BCD25691ABDE95D00F1D563 /* main.c */,
+				7BCD256A1ABDE95D00F1D563 /* configure */,
+				7BCD256B1ABDE95D00F1D563 /* Makefile */,
+				7BCD256C1ABDE95D00F1D563 /* README.md */,
+				7BCD256D1ABDE95D00F1D563 /* test */,
+			);
+			sourceTree = "<group>";
+		};
+		7BCD256D1ABDE95D00F1D563 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD256E1ABDE95D00F1D563 /* bats */,
+				7BCD25AA1ABDE95D00F1D563 /* bind-error.bats */,
+				7BCD25AB1ABDE95D00F1D563 /* custom-port.bats */,
+				7BCD25AC1ABDE95D00F1D563 /* custom-records.bats */,
+				7BCD25AD1ABDE95D00F1D563 /* default-records.bats */,
+				7BCD25AE1ABDE95D00F1D563 /* large-request.bats */,
+				7BCD25AF1ABDE95D00F1D563 /* LaunchAgents */,
+				7BCD25B31ABDE95D00F1D563 /* launchctl-ondemand-socket.bats */,
+				7BCD25B41ABDE95D00F1D563 /* launchctl-port.bats */,
+				7BCD25B51ABDE95D00F1D563 /* launchctl-socket.bats */,
+				7BCD25B61ABDE95D00F1D563 /* multiple-requests.bats */,
+				7BCD25B71ABDE95D00F1D563 /* nxdomin.bats */,
+				7BCD25B81ABDE95D00F1D563 /* subdomains.bats */,
+				7BCD25B91ABDE95D00F1D563 /* test_helper.bash */,
+				7BCD25BA1ABDE95D00F1D563 /* timeout.bats */,
+				7BCD25BB1ABDE95D00F1D563 /* usage.bats */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		7BCD256E1ABDE95D00F1D563 /* bats */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD256F1ABDE95D00F1D563 /* .gitattributes */,
+				7BCD25701ABDE95D00F1D563 /* .travis.yml */,
+				7BCD25711ABDE95D00F1D563 /* bin */,
+				7BCD25731ABDE95D00F1D563 /* install.sh */,
+				7BCD25741ABDE95D00F1D563 /* libexec */,
+				7BCD257A1ABDE95D00F1D563 /* LICENSE */,
+				7BCD257B1ABDE95D00F1D563 /* man */,
+				7BCD25821ABDE95D00F1D563 /* package.json */,
+				7BCD25831ABDE95D00F1D563 /* README.md */,
+				7BCD25841ABDE95D00F1D563 /* test */,
+			);
+			path = bats;
+			sourceTree = "<group>";
+		};
+		7BCD25711ABDE95D00F1D563 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25721ABDE95D00F1D563 /* bats */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		7BCD25741ABDE95D00F1D563 /* libexec */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25751ABDE95D00F1D563 /* bats */,
+				7BCD25761ABDE95D00F1D563 /* bats-exec-suite */,
+				7BCD25771ABDE95D00F1D563 /* bats-exec-test */,
+				7BCD25781ABDE95D00F1D563 /* bats-format-tap-stream */,
+				7BCD25791ABDE95D00F1D563 /* bats-preprocess */,
+			);
+			path = libexec;
+			sourceTree = "<group>";
+		};
+		7BCD257B1ABDE95D00F1D563 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD257C1ABDE95D00F1D563 /* bats.1 */,
+				7BCD257D1ABDE95D00F1D563 /* bats.1.ronn */,
+				7BCD257E1ABDE95D00F1D563 /* bats.7 */,
+				7BCD257F1ABDE95D00F1D563 /* bats.7.ronn */,
+				7BCD25801ABDE95D00F1D563 /* Makefile */,
+				7BCD25811ABDE95D00F1D563 /* README.md */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		7BCD25841ABDE95D00F1D563 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25851ABDE95D00F1D563 /* bats.bats */,
+				7BCD25861ABDE95D00F1D563 /* fixtures */,
+				7BCD25A61ABDE95D00F1D563 /* suite.bats */,
+				7BCD25A71ABDE95D00F1D563 /* test_helper.bash */,
+				7BCD25A81ABDE95D00F1D563 /* tmp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		7BCD25861ABDE95D00F1D563 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25871ABDE95D00F1D563 /* bats */,
+				7BCD259E1ABDE95D00F1D563 /* suite */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		7BCD25871ABDE95D00F1D563 /* bats */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25881ABDE95D00F1D563 /* dos_line.bats */,
+				7BCD25891ABDE95D00F1D563 /* empty.bats */,
+				7BCD258A1ABDE95D00F1D563 /* environment.bats */,
+				7BCD258B1ABDE95D00F1D563 /* failing.bats */,
+				7BCD258C1ABDE95D00F1D563 /* failing_and_passing.bats */,
+				7BCD258D1ABDE95D00F1D563 /* failing_helper.bats */,
+				7BCD258E1ABDE95D00F1D563 /* failing_setup.bats */,
+				7BCD258F1ABDE95D00F1D563 /* failing_teardown.bats */,
+				7BCD25901ABDE95D00F1D563 /* intact.bats */,
+				7BCD25911ABDE95D00F1D563 /* invalid_tap.bats */,
+				7BCD25921ABDE95D00F1D563 /* load.bats */,
+				7BCD25931ABDE95D00F1D563 /* output.bats */,
+				7BCD25941ABDE95D00F1D563 /* passing.bats */,
+				7BCD25951ABDE95D00F1D563 /* passing_and_failing.bats */,
+				7BCD25961ABDE95D00F1D563 /* passing_and_skipping.bats */,
+				7BCD25971ABDE95D00F1D563 /* passing_failing_and_skipping.bats */,
+				7BCD25981ABDE95D00F1D563 /* setup.bats */,
+				7BCD25991ABDE95D00F1D563 /* single_line.bats */,
+				7BCD259A1ABDE95D00F1D563 /* skipped.bats */,
+				7BCD259B1ABDE95D00F1D563 /* teardown.bats */,
+				7BCD259C1ABDE95D00F1D563 /* test_helper.bash */,
+				7BCD259D1ABDE95D00F1D563 /* without_trailing_newline.bats */,
+			);
+			path = bats;
+			sourceTree = "<group>";
+		};
+		7BCD259E1ABDE95D00F1D563 /* suite */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD259F1ABDE95D00F1D563 /* empty */,
+				7BCD25A11ABDE95D00F1D563 /* multiple */,
+				7BCD25A41ABDE95D00F1D563 /* single */,
+			);
+			path = suite;
+			sourceTree = "<group>";
+		};
+		7BCD259F1ABDE95D00F1D563 /* empty */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25A01ABDE95D00F1D563 /* .gitkeep */,
+			);
+			path = empty;
+			sourceTree = "<group>";
+		};
+		7BCD25A11ABDE95D00F1D563 /* multiple */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25A21ABDE95D00F1D563 /* a.bats */,
+				7BCD25A31ABDE95D00F1D563 /* b.bats */,
+			);
+			path = multiple;
+			sourceTree = "<group>";
+		};
+		7BCD25A41ABDE95D00F1D563 /* single */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25A51ABDE95D00F1D563 /* test.bats */,
+			);
+			path = single;
+			sourceTree = "<group>";
+		};
+		7BCD25A81ABDE95D00F1D563 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25A91ABDE95D00F1D563 /* .gitignore */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		7BCD25AF1ABDE95D00F1D563 /* LaunchAgents */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25B01ABDE95D00F1D563 /* test.ondemand-socket.plist */,
+				7BCD25B11ABDE95D00F1D563 /* test.port.plist */,
+				7BCD25B21ABDE95D00F1D563 /* test.socket.plist */,
+			);
+			path = LaunchAgents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		7BCD25601ABDE8B700F1D563 /* launchdns */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "launchdns" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = launchdns;
+			passBuildSettingsInEnvironment = 1;
+			productName = launchdns;
+		};
+		7BCD25BC1ABDEA1100F1D563 /* bats */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = test;
+			buildConfigurationList = 7BCD25BD1ABDEA1100F1D563 /* Build configuration list for PBXLegacyTarget "bats" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = bats;
+			passBuildSettingsInEnvironment = 1;
+			productName = bats;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		7BCD255C1ABDE8B700F1D563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alex Gray";
+				TargetAttributes = {
+					7BCD25601ABDE8B700F1D563 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					7BCD25BC1ABDEA1100F1D563 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 7BCD255F1ABDE8B700F1D563 /* Build configuration list for PBXProject "launchdns" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7BCD255B1ABDE8B700F1D563;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BCD25601ABDE8B700F1D563 /* launchdns */,
+				7BCD25BC1ABDEA1100F1D563 /* bats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		7BCD25611ABDE8B700F1D563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BCD25621ABDE8B700F1D563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7BCD25641ABDE8B700F1D563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BCD25651ABDE8B700F1D563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BCD25BE1ABDEA1100F1D563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BCD25BF1ABDEA1100F1D563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BCD255F1ABDE8B700F1D563 /* Build configuration list for PBXProject "launchdns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCD25611ABDE8B700F1D563 /* Debug */,
+				7BCD25621ABDE8B700F1D563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "launchdns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCD25641ABDE8B700F1D563 /* Debug */,
+				7BCD25651ABDE8B700F1D563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BCD25BD1ABDEA1100F1D563 /* Build configuration list for PBXLegacyTarget "bats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCD25BE1ABDEA1100F1D563 /* Debug */,
+				7BCD25BF1ABDEA1100F1D563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BCD255C1ABDE8B700F1D563 /* Project object */;
+}
