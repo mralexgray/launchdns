@@ -6,11 +6,24 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7BCD25CA1ABDEE2A00F1D563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD25691ABDE95D00F1D563 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BCD25CB1ABDF55100F1D563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCD255C1ABDE8B700F1D563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCD25C31ABDEDFE00F1D563;
+			remoteInfo = launchdns;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		7BCD25661ABDE95C00F1D563 /* com.mrgray.launchdns.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.mrgray.launchdns.plist; path = ../../../../../Users/localadmin/Library/LaunchAgents/com.mrgray.launchdns.plist; sourceTree = "<group>"; };
-		7BCD25671ABDE95D00F1D563 /* launchdns */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = launchdns; sourceTree = "<group>"; };
+		7BCD25661ABDE95C00F1D563 /* com.github.launchdns.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.github.launchdns.plist; path = ../../../../../Users/localadmin/Library/LaunchAgents/com.github.launchdns.plist; sourceTree = "<group>"; };
 		7BCD25681ABDE95D00F1D563 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		7BCD25691ABDE95D00F1D563 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7BCD25691ABDE95D00F1D563 /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BCD256A1ABDE95D00F1D563 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
 		7BCD256B1ABDE95D00F1D563 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		7BCD256C1ABDE95D00F1D563 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -79,20 +92,22 @@
 		7BCD25B91ABDE95D00F1D563 /* test_helper.bash */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_helper.bash; sourceTree = "<group>"; };
 		7BCD25BA1ABDE95D00F1D563 /* timeout.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeout.bats; sourceTree = "<group>"; };
 		7BCD25BB1ABDE95D00F1D563 /* usage.bats */ = {isa = PBXFileReference; lastKnownFileType = text; path = usage.bats; sourceTree = "<group>"; };
+		7BCD25C41ABDEDFE00F1D563 /* launchdns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = launchdns; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		7BCD255B1ABDE8B700F1D563 = {
 			isa = PBXGroup;
 			children = (
-				7BCD25661ABDE95C00F1D563 /* com.mrgray.launchdns.plist */,
-				7BCD25671ABDE95D00F1D563 /* launchdns */,
 				7BCD25681ABDE95D00F1D563 /* config.h */,
-				7BCD25691ABDE95D00F1D563 /* main.c */,
+				7BCD25691ABDE95D00F1D563 /* main.m */,
 				7BCD256A1ABDE95D00F1D563 /* configure */,
 				7BCD256B1ABDE95D00F1D563 /* Makefile */,
+				7BCD25661ABDE95C00F1D563 /* com.github.launchdns.plist */,
 				7BCD256C1ABDE95D00F1D563 /* README.md */,
 				7BCD256D1ABDE95D00F1D563 /* test */,
+				7BCD25C61ABDEDFE00F1D563 /* launchdns */,
+				7BCD25C51ABDEDFE00F1D563 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,19 +287,35 @@
 			path = LaunchAgents;
 			sourceTree = "<group>";
 		};
+		7BCD25C51ABDEDFE00F1D563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD25C41ABDEDFE00F1D563 /* launchdns */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BCD25C61ABDEDFE00F1D563 /* launchdns */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = launchdns;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		7BCD25601ABDE8B700F1D563 /* launchdns */ = {
+		7BCD25601ABDE8B700F1D563 /* make launchdns */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "launchdns" */;
+			buildConfigurationList = 7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "make launchdns" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
+				7BCD25CC1ABDF55100F1D563 /* PBXTargetDependency */,
 			);
-			name = launchdns;
+			name = "make launchdns";
 			passBuildSettingsInEnvironment = 1;
 			productName = launchdns;
 		};
@@ -304,6 +335,24 @@
 		};
 /* End PBXLegacyTarget section */
 
+/* Begin PBXNativeTarget section */
+		7BCD25C31ABDEDFE00F1D563 /* launchdns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCD25C71ABDEDFE00F1D563 /* Build configuration list for PBXNativeTarget "launchdns" */;
+			buildPhases = (
+				7BCD25C01ABDEDFE00F1D563 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = launchdns;
+			productName = launchdns;
+			productReference = 7BCD25C41ABDEDFE00F1D563 /* launchdns */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		7BCD255C1ABDE8B700F1D563 /* Project object */ = {
 			isa = PBXProject;
@@ -317,6 +366,9 @@
 					7BCD25BC1ABDEA1100F1D563 = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					7BCD25C31ABDEDFE00F1D563 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 				};
 			};
 			buildConfigurationList = 7BCD255F1ABDE8B700F1D563 /* Build configuration list for PBXProject "launchdns" */;
@@ -327,14 +379,35 @@
 				en,
 			);
 			mainGroup = 7BCD255B1ABDE8B700F1D563;
+			productRefGroup = 7BCD25C51ABDEDFE00F1D563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BCD25601ABDE8B700F1D563 /* launchdns */,
+				7BCD25601ABDE8B700F1D563 /* make launchdns */,
 				7BCD25BC1ABDEA1100F1D563 /* bats */,
+				7BCD25C31ABDEDFE00F1D563 /* launchdns */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BCD25C01ABDEDFE00F1D563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCD25CA1ABDEE2A00F1D563 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BCD25CC1ABDF55100F1D563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCD25C31ABDEDFE00F1D563 /* launchdns */;
+			targetProxy = 7BCD25CB1ABDF55100F1D563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7BCD25611ABDE8B700F1D563 /* Debug */ = {
@@ -357,7 +430,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -372,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -400,7 +473,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -408,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -420,7 +493,7 @@
 				DEBUGGING_SYMBOLS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fmodules";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,7 +502,7 @@
 		7BCD25651ABDE8B700F1D563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fmodules";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -460,6 +533,28 @@
 			};
 			name = Release;
 		};
+		7BCD25C81ABDEDFE00F1D563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = launchdns/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BCD25C91ABDEDFE00F1D563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = launchdns/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,13 +567,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "launchdns" */ = {
+		7BCD25631ABDE8B700F1D563 /* Build configuration list for PBXLegacyTarget "make launchdns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BCD25641ABDE8B700F1D563 /* Debug */,
 				7BCD25651ABDE8B700F1D563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BCD25BD1ABDEA1100F1D563 /* Build configuration list for PBXLegacyTarget "bats" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +583,16 @@
 				7BCD25BF1ABDEA1100F1D563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCD25C71ABDEDFE00F1D563 /* Build configuration list for PBXNativeTarget "launchdns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCD25C81ABDEDFE00F1D563 /* Debug */,
+				7BCD25C91ABDEDFE00F1D563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

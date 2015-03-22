@@ -76,33 +76,22 @@ Though, the preferred way to configure the server is to run on demand.
 
 **~/Library/LaunchAgents/com.github.josh.launchdns.plist**
 
-``` xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>Label</key>
-	<string>com.github.josh.launchdns</string>
-	<key>ProgramArguments</key>
-	<array>
-		<string>/usr/local/bin/launchdns</string>
-		<string>--socket=Listeners</string>
-		<string>--timeout=30</string>
-	</array>
-	<key>Sockets</key>
-	<dict>
-		<key>Listeners</key>
-		<dict>
-			<key>SockType</key>
-			<string>dgram</string>
-			<key>SockNodeName</key>
-			<string>127.0.0.1</string>
-			<key>SockServiceName</key>
-			<string>55353</string>
-		</dict>
-	</dict>
-</dict>
-</plist>
+```php
+{
+    Label = "com.github.josh.launchdns";
+    ProgramArguments =     (
+        "/usr/local/bin/launchdns",
+        "--socket=Listeners",
+        "--timeout=30"
+    );
+    Sockets =     {
+        Listeners =         {
+            SockNodeName = "127.0.0.1";
+            SockServiceName = 55353;
+            SockType = dgram;
+        };
+    };
+}
 ```
 
 Instead of the server being started at load, it will automatically start on demand when theres activity on 127.0.0.1:55353. And after 30 seconds, it will quit until it needs to be launched again. Note the `--socket` name matches the `Listeners` name of the Socket dictionary key.

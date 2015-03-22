@@ -1,11 +1,12 @@
 CC = cc
-CFLAGS = -Wall
+CFLAGS = $(OTHER_CFLAGS)
+CFLAGS ?= -Wall
 INSTALL = /usr/bin/install
 PREFIX ?= /usr/local
 BINDIR = $(PREFIX)/bin
 BATS = test/bats/bin/bats
 CONFIG = config.h
-SOURCES = main.c
+SOURCES = main.m
 EXECUTABLE = launchdns
 
 all: $(EXECUTABLE)
@@ -13,7 +14,7 @@ all: $(EXECUTABLE)
 $(CONFIG):
 	./configure
 
-$(EXECUTABLE): main.c $(CONFIG)
+$(EXECUTABLE): main.m $(CONFIG)
 	$(CC) $(CFLAGS) -o $@ $<
 
 install: $(EXECUTABLE)

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Disabled</key>
+	<false/>
+	<key>Label</key>
+	<string>com.github.launchdns</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/launchdns</string>
+		<string>--socket=mrgray.com</string>
+		<string>--timeout=6</string>
+	</array>
+	<key>Sockets</key>
+	<dict>
+		<key>mrgray.com</key>
+		<dict>
+			<key>Bonjour</key>
+			<array>
+				<string>mrgray.com DNS listener</string>
+			</array>
+			<key>SockNodeName</key>
+			<string>127.0.0.1</string>
+			<key>SockServiceName</key>
+			<string>55353</string>
+			<key>SockType</key>
+			<string>dgram</string>
+		</dict>
+	</dict>
+	<key>StandardErrorPath</key>
+	<string>/tmp/com.mrgray.launchdns.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/com.mrgray.launchdns.out</string>
+</dict>
+</plist>
